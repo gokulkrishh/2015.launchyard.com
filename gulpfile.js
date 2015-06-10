@@ -107,6 +107,18 @@ gulp.task('server', function () {
         .pipe(plugins.webserver(serverConfiguration));
 });
 
+gulp.task('critical', function () {
+    return critical.generateInline({
+        base: 'build/',
+        src: 'index.html',
+        styleTarget: 'css/master.css',
+        htmlTarget: 'index.html',
+        width: 320,
+        height: 480,
+        minify: true
+    });
+});
+
 /*===========================================================
  GULP : APP TASKS :: HTML -- Minify html to build
 ===========================================================*/
