@@ -2,6 +2,8 @@
 
 A fully optimised version of http://launchyard.com
 
+Demo: https://gokulkrishh.github.io/demo/launchyard
+
 ## Installation
 
 *You need to have [NodeJS](http://nodejs.org/)*
